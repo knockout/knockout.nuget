@@ -2,13 +2,13 @@
 <package> 
   <metadata> 
     <id>knockoutjs</id> 
-    <version>3.4.1</version>
-    <authors>Steven Sanderson</authors>
+    <version>3.4.2</version>
+    <authors>The Knockout.js team</authors>
     <description>A JavaScript MVVM library to help you create rich, dynamic user interfaces with clean maintainable code</description> 
     <language>en-US</language>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <projectUrl>http://knockoutjs.com/</projectUrl>
-    <iconUrl>http://github.com/SteveSanderson/knockout.nuget/raw/master/logo.png</iconUrl>
+    <iconUrl>http://github.com/knockout/knockout.nuget/raw/master/logo.png</iconUrl>
     <tags>knockout mvvm</tags>
   </metadata> 
   <files>
