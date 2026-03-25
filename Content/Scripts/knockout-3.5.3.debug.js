@@ -1,5 +1,5 @@
 /*!
- * Knockout JavaScript library v3.5.2
+ * Knockout JavaScript library v3.5.3
  * (c) The Knockout.js team - http://knockoutjs.com/
  * License: MIT (http://www.opensource.org/licenses/mit-license.php)
  */
@@ -49,7 +49,7 @@ ko.exportSymbol = function(koPath, object) {
 ko.exportProperty = function(owner, publicName, object) {
     owner[publicName] = object;
 };
-ko.version = "3.5.2";
+ko.version = "3.5.3";
 
 ko.exportSymbol('version', ko.version);
 // For any options that may affect various areas of Knockout and aren't directly associated with data binding.
@@ -3260,7 +3260,7 @@ ko.exportSymbol('virtualElements.setDomNodeChildren', ko.virtualElements.setDomN
         if (koTrustedTypesPolicy) {
             // new Function() doesn't accept TrustedScript in Chrome, so use eval instead. (https://issues.chromium.org/issues/40133092)
             // eval returns the result of the last expression, so wrap as a function expression.
-            return eval(koTrustedTypesPolicy['createScript']("(function($context,$element){" + functionBody + "})"));
+            return (0, eval)(koTrustedTypesPolicy['createScript']("(function($context,$element){" + functionBody + "})"));
         }
         return new Function("$context", "$element", functionBody);
     }
